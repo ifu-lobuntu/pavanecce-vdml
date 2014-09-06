@@ -12,7 +12,7 @@
 	<modules>
 		<module>pavanecce-vdml-core</module>
 		<module>pavanecce-vdml-rea</module>
-		<module>pavanecce-cmmn-tests</module>
+		<module>pavanecce-vdml-tests</module>
 	</modules>
 </project>
 

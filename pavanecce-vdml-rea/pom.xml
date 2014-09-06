@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<groupId>org.pavanecce</groupId>
-		<artifactId>pavanecce-cmmn</artifactId>
+		<artifactId>pavanecce-vdml</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>pavanecce-cmmn-cfa</artifactId>
+	<artifactId>pavanecce-vdml-rea</artifactId>
 	<packaging>bundle</packaging>
 	<dependencies>
 		<dependency>
@@ -29,9 +29,9 @@
 				<configuration>
 					<manifestLocation>META-INF</manifestLocation>
 					<instructions>
-						<Export-Package>org.pavanecce.cmmn.extensions</Export-Package>
-						<Bundle-SymbolicName>org.pavanecce.cmmn.extensions</Bundle-SymbolicName>
-						<Bundle-Name>org.pavanecce.cmmn.extensions</Bundle-Name>
+						<Export-Package>org.pavanecce.vdml.rea</Export-Package>
+						<Bundle-SymbolicName>org.pavanecce.vdml.rea</Bundle-SymbolicName>
+						<Bundle-Name>org.pavanecce.vdml.rea</Bundle-Name>
 					</instructions>
 				</configuration>
 			</plugin>
