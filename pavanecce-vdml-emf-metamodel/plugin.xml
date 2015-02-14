@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http://www.omg.org/spec/VDML/20131201/vdml.xmi"
+            class="org.pavanecce.vdml.metamodel.vdml.VdmlPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="vdml"
+            class="org.pavanecce.vdml.metamodel.vdml.util.VdmlResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http://www.omg.org/spec/SMM/20131201/SMM.cmof"
+            class="org.pavanecce.vdml.metamodel.smm.SmmPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="smm"
+            class="org.pavanecce.vdml.metamodel.smm.util.SmmResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http:///Data/CMOF.ecore"
+            class="org.pavanecce.vdml.metamodel.cmof.CmofPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="cmof"
+            class="org.pavanecce.vdml.metamodel.cmof.util.CmofResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http://www.omg.org/spec/DD/20150101/DI-XMI"
+            class="org.eclipse.dd.cmmn.di.DiPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="di"
+            class="org.eclipse.dd.cmmn.di.util.DiResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http://www.omg.org/spec/VDML/20131201/DI"
+            class="org.pavanecce.vdml.metamodel.vdmldi.VdmlDiPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="vdmldi"
+            class="org.pavanecce.vdml.metamodel.vdmldi.util.VdmlDiResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated vdml -->
+      <package
+            uri="http://www.omg.org/spec/DD/20150101/DC-XMI"
+            class="org.eclipse.dd.cmmn.dc.DcPackage"
+            genModel="model/vdml.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated vdml -->
+      <parser
+            type="dc"
+            class="org.eclipse.dd.cmmn.dc.util.DcResourceFactoryImpl"/>
+   </extension>
+
+</plugin>
