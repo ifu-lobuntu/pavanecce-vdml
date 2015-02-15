@@ -590,24 +590,24 @@ public class VdmlPackageImpl extends EPackageImpl implements VdmlPackage {
         XMLTypePackage.eINSTANCE.eClass();
 
         // Obtain or create and register interdependencies
-        CmofPackageImpl theCmofPackage = (CmofPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CmofPackage.eNS_URI) instanceof CmofPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CmofPackage.eNS_URI) : CmofPackage.eINSTANCE);
         SmmPackageImpl theSmmPackage = (SmmPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(SmmPackage.eNS_URI) instanceof SmmPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(SmmPackage.eNS_URI) : SmmPackage.eINSTANCE);
+        CmofPackageImpl theCmofPackage = (CmofPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CmofPackage.eNS_URI) instanceof CmofPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CmofPackage.eNS_URI) : CmofPackage.eINSTANCE);
         DcPackageImpl theDcPackage = (DcPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DcPackage.eNS_URI) instanceof DcPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DcPackage.eNS_URI) : DcPackage.eINSTANCE);
         DiPackageImpl theDiPackage = (DiPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DiPackage.eNS_URI) instanceof DiPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DiPackage.eNS_URI) : DiPackage.eINSTANCE);
         VdmlDiPackageImpl theVdmlDiPackage = (VdmlDiPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(VdmlDiPackage.eNS_URI) instanceof VdmlDiPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(VdmlDiPackage.eNS_URI) : VdmlDiPackage.eINSTANCE);
 
         // Create package meta-data objects
         theVdmlPackage.createPackageContents();
-        theCmofPackage.createPackageContents();
         theSmmPackage.createPackageContents();
+        theCmofPackage.createPackageContents();
         theDcPackage.createPackageContents();
         theDiPackage.createPackageContents();
         theVdmlDiPackage.createPackageContents();
 
         // Initialize created meta-data
         theVdmlPackage.initializePackageContents();
-        theCmofPackage.initializePackageContents();
         theSmmPackage.initializePackageContents();
+        theCmofPackage.initializePackageContents();
         theDcPackage.initializePackageContents();
         theDiPackage.initializePackageContents();
         theVdmlDiPackage.initializePackageContents();
@@ -745,6 +745,15 @@ public class VdmlPackageImpl extends EPackageImpl implements VdmlPackage {
      */
     public EAttribute getVdmlElement_Description() {
         return (EAttribute)vdmlElementEClass.getEStructuralFeatures().get(4);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EAttribute getVdmlElement_AnyAttribute() {
+        return (EAttribute)vdmlElementEClass.getEStructuralFeatures().get(5);
     }
 
     /**
@@ -3142,6 +3151,7 @@ public class VdmlPackageImpl extends EPackageImpl implements VdmlPackage {
         createEAttribute(vdmlElementEClass, VDML_ELEMENT__ID);
         createEAttribute(vdmlElementEClass, VDML_ELEMENT__NAME);
         createEAttribute(vdmlElementEClass, VDML_ELEMENT__DESCRIPTION);
+        createEAttribute(vdmlElementEClass, VDML_ELEMENT__ANY_ATTRIBUTE);
 
         attributeEClass = createEClass(ATTRIBUTE);
         createEAttribute(attributeEClass, ATTRIBUTE__TAG);
@@ -3580,6 +3590,7 @@ public class VdmlPackageImpl extends EPackageImpl implements VdmlPackage {
         initEAttribute(getVdmlElement_Id(), theXMLTypePackage.getString(), "id", null, 0, 1, VdmlElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getVdmlElement_Name(), theXMLTypePackage.getString(), "name", null, 0, 1, VdmlElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getVdmlElement_Description(), theXMLTypePackage.getString(), "description", null, 0, 1, VdmlElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEAttribute(getVdmlElement_AnyAttribute(), ecorePackage.getEFeatureMapEntry(), "anyAttribute", null, 0, -1, VdmlElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getAttribute_Tag(), theXMLTypePackage.getString(), "tag", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

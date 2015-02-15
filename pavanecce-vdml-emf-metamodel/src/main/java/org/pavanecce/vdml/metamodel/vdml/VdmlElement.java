@@ -4,6 +4,7 @@ package org.pavanecce.vdml.metamodel.vdml;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.util.FeatureMap;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getId <em>Id</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getName <em>Name</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getAnyAttribute <em>Any Attribute</em>}</li>
  * </ul>
  * </p>
  *
@@ -77,6 +79,22 @@ public interface VdmlElement extends EObject {
      * @generated
      */
     void setDescription(String value);
+
+    /**
+     * Returns the value of the '<em><b>Any Attribute</b></em>' attribute list.
+     * The list contents are of type {@link org.eclipse.emf.ecore.util.FeatureMap.Entry}.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Any Attribute</em>' attribute list isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Any Attribute</em>' attribute list.
+     * @see org.pavanecce.vdml.metamodel.vdml.VdmlPackage#getVdmlElement_AnyAttribute()
+     * @model dataType="org.eclipse.emf.ecore.EFeatureMapEntry" many="true"
+     * @generated
+     */
+    FeatureMap getAnyAttribute();
 
     /**
      * Returns the value of the '<em><b>Attribute</b></em>' containment reference list.

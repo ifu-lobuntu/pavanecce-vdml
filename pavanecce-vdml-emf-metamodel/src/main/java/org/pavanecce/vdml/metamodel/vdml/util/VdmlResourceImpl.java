@@ -5,18 +5,15 @@ package org.pavanecce.vdml.metamodel.vdml.util;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
-
 import org.eclipse.cmmn1.TDefinitions;
 import org.eclipse.cmmn1.util.ImportHelper;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLSave;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMLSaveImpl;
 import org.pavanecce.vdml.metamodel.vdml.VdmlPackage;
 
 /**
@@ -31,6 +28,13 @@ public class VdmlResourceImpl extends XMLResourceImpl {
     static {
         referrables.add(VdmlPackage.eINSTANCE.getCapabilityMethod());
         referrables.add(VdmlPackage.eINSTANCE.getRole());
+        referrables.add(VdmlPackage.eINSTANCE.getActivity());
+        referrables.add(VdmlPackage.eINSTANCE.getInputPort());
+        referrables.add(VdmlPackage.eINSTANCE.getOutputPort());
+        referrables.add(VdmlPackage.eINSTANCE.getDeliverableFlow());
+        referrables.add(VdmlPackage.eINSTANCE.getResourceUse());
+        referrables.add(VdmlPackage.eINSTANCE.getStore());
+        referrables.add(VdmlPackage.eINSTANCE.getPool());
     }
     /**
      * Creates an instance of the resource.

@@ -356,4 +356,13 @@ public class VDMLEdgeImpl extends LabeledEdgeImpl implements VDMLEdge {
     public EObject getModelElement() {
         return getVDMLElement();
     }
+
+    @Override
+    public DiagramElement getSource() {
+        return this.getSourceElement();
+    }
+    @Override
+    public DiagramElement getTarget() {
+        return this.getTargetElement();
+    }
 } //VDMLEdgeImpl

@@ -112,13 +112,22 @@ public interface VdmlPackage extends EPackage {
     int VDML_ELEMENT__DESCRIPTION = 4;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VDML_ELEMENT__ANY_ATTRIBUTE = 5;
+
+    /**
      * The number of structural features of the '<em>Element</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-    int VDML_ELEMENT_FEATURE_COUNT = 5;
+    int VDML_ELEMENT_FEATURE_COUNT = 6;
 
     /**
      * The number of operations of the '<em>Element</em>' class.
@@ -183,6 +192,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_DELIVERY_MODEL__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_DELIVERY_MODEL__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Metrics Model</b></em>' containment reference list.
@@ -348,6 +366,15 @@ public interface VdmlPackage extends EPackage {
     int ATTRIBUTE__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ATTRIBUTE__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Tag</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -439,6 +466,15 @@ public interface VdmlPackage extends EPackage {
     int ANNOTATION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ANNOTATION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Text</b></em>' attribute.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -519,6 +555,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_LIBRARY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_LIBRARY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Value Definition</b></em>' containment reference list.
@@ -612,6 +657,15 @@ public interface VdmlPackage extends EPackage {
     int VALUE_DEFINITION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_DEFINITION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Category</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -701,6 +755,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_CATEGORY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_CATEGORY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Parent Category</b></em>' reference list.
@@ -803,6 +866,15 @@ public interface VdmlPackage extends EPackage {
     int CAPABILITY_LIBRARY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_LIBRARY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Capability</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -892,6 +964,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Parent Cabability</b></em>' reference list.
@@ -992,6 +1073,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY_DEPENDENCY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_DEPENDENCY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Is Tangible</b></em>' attribute.
@@ -1121,6 +1211,15 @@ public interface VdmlPackage extends EPackage {
     int BUSINESS_ITEM_LIBRARY_ELEMENT__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_ITEM_LIBRARY_ELEMENT__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The number of structural features of the '<em>Business Item Library Element</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1192,6 +1291,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int BUSINESS_ITEM_DEFINITION__DESCRIPTION = BUSINESS_ITEM_LIBRARY_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_ITEM_DEFINITION__ANY_ATTRIBUTE = BUSINESS_ITEM_LIBRARY_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Practice Definition</b></em>' reference list.
@@ -1330,6 +1438,15 @@ public interface VdmlPackage extends EPackage {
     int PRACTICE_DEFINITION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PRACTICE_DEFINITION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Category</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1430,6 +1547,15 @@ public interface VdmlPackage extends EPackage {
     int PRACTICE_CATEGORY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PRACTICE_CATEGORY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Parent Category</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1528,6 +1654,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY_DEFINITION__DESCRIPTION = CAPABILITY__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_DEFINITION__ANY_ATTRIBUTE = CAPABILITY__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Parent Cabability</b></em>' reference list.
@@ -1666,6 +1801,15 @@ public interface VdmlPackage extends EPackage {
     int BUSINESS_ITEM_CATEGORY__DESCRIPTION = BUSINESS_ITEM_LIBRARY_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_ITEM_CATEGORY__ANY_ATTRIBUTE = BUSINESS_ITEM_LIBRARY_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Parent Category</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1766,6 +1910,15 @@ public interface VdmlPackage extends EPackage {
     int BUSINESS_ITEM_LIBRARY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_ITEM_LIBRARY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Business Item Library Element</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1848,6 +2001,15 @@ public interface VdmlPackage extends EPackage {
     int MEASURABLE_ELEMENT__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEASURABLE_ELEMENT__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1928,6 +2090,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int PARTICIPANT__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PARTICIPANT__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -2028,6 +2199,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int ACTOR__DESCRIPTION = PARTICIPANT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ACTOR__ANY_ATTRIBUTE = PARTICIPANT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -2139,6 +2319,15 @@ public interface VdmlPackage extends EPackage {
     int MEASURED_CHARACTERISTIC__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEASURED_CHARACTERISTIC__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measurement</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2228,6 +2417,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int ASSIGNMENT__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ASSIGNMENT__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Assigned Role</b></em>' reference.
@@ -2328,6 +2526,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int ROLE__DESCRIPTION = PARTICIPANT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ROLE__ANY_ATTRIBUTE = PARTICIPANT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -2493,6 +2700,15 @@ public interface VdmlPackage extends EPackage {
     int PORT_CONTAINER__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PORT_CONTAINER__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2582,6 +2798,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int ACTIVITY__DESCRIPTION = PORT_CONTAINER__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ACTIVITY__ANY_ATTRIBUTE = PORT_CONTAINER__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -2747,6 +2972,15 @@ public interface VdmlPackage extends EPackage {
     int PORT__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PORT__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2883,6 +3117,15 @@ public interface VdmlPackage extends EPackage {
     int EXPRESSION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int EXPRESSION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Operand</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2974,6 +3217,15 @@ public interface VdmlPackage extends EPackage {
     int OPERAND__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int OPERAND__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -3063,6 +3315,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int RESOURCE_USE__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int RESOURCE_USE__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -3226,6 +3487,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int OUTPUT_PORT__DESCRIPTION = PORT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int OUTPUT_PORT__ANY_ATTRIBUTE = PORT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -3418,6 +3688,15 @@ public interface VdmlPackage extends EPackage {
     int DELIVERABLE_FLOW__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int DELIVERABLE_FLOW__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -3552,6 +3831,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int INPUT_PORT__DESCRIPTION = PORT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int INPUT_PORT__ANY_ATTRIBUTE = PORT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -3753,6 +4041,15 @@ public interface VdmlPackage extends EPackage {
     int PORT_DELEGATION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PORT_DELEGATION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The number of structural features of the '<em>Port Delegation</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -3824,6 +4121,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int INPUT_DELEGATION__DESCRIPTION = PORT_DELEGATION__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int INPUT_DELEGATION__ANY_ATTRIBUTE = PORT_DELEGATION__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Source</b></em>' reference.
@@ -3915,6 +4221,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int BUSINESS_ITEM__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_ITEM__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -4051,6 +4366,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int STORE__DESCRIPTION = PORT_CONTAINER__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int STORE__ANY_ATTRIBUTE = PORT_CONTAINER__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -4196,6 +4520,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int COLLABORATION__DESCRIPTION = PARTICIPANT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COLLABORATION__ANY_ATTRIBUTE = PARTICIPANT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -4377,6 +4710,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int ORG_UNIT__DESCRIPTION = COLLABORATION__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ORG_UNIT__ANY_ATTRIBUTE = COLLABORATION__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -4605,6 +4947,15 @@ public interface VdmlPackage extends EPackage {
     int ANALYSIS_CONTEXT__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ANALYSIS_CONTEXT__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Delegationt Context</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -4712,6 +5063,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int DELEGATION_CONTEXT__DESCRIPTION = ANALYSIS_CONTEXT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int DELEGATION_CONTEXT__ANY_ATTRIBUTE = ANALYSIS_CONTEXT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Delegationt Context</b></em>' containment reference list.
@@ -4857,6 +5217,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int SCENARIO__DESCRIPTION = ANALYSIS_CONTEXT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int SCENARIO__ANY_ATTRIBUTE = ANALYSIS_CONTEXT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Delegationt Context</b></em>' containment reference list.
@@ -5022,6 +5391,15 @@ public interface VdmlPackage extends EPackage {
     int RELEASE_CONTROL__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int RELEASE_CONTROL__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Scenario</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -5111,6 +5489,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY_OFFER__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_OFFER__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -5265,6 +5652,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY_METHOD__DESCRIPTION = COLLABORATION__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_METHOD__ANY_ATTRIBUTE = COLLABORATION__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -5502,6 +5898,15 @@ public interface VdmlPackage extends EPackage {
     int PERFORMER__DESCRIPTION = ROLE__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PERFORMER__ANY_ATTRIBUTE = ROLE__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -5663,6 +6068,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int POSITION__DESCRIPTION = ROLE__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int POSITION__ANY_ATTRIBUTE = ROLE__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -5837,6 +6251,15 @@ public interface VdmlPackage extends EPackage {
     int POOL__DESCRIPTION = STORE__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int POOL__ANY_ATTRIBUTE = STORE__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6009,6 +6432,15 @@ public interface VdmlPackage extends EPackage {
     int CALENDAR_SERVICE__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CALENDAR_SERVICE__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The number of structural features of the '<em>Calendar Service</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6080,6 +6512,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_ELEMENT__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_ELEMENT__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -6189,6 +6630,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_ADD__DESCRIPTION = VALUE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_ADD__ANY_ATTRIBUTE = VALUE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -6325,6 +6775,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_PROPOSITION_COMPONENT__DESCRIPTION = VALUE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_PROPOSITION_COMPONENT__ANY_ATTRIBUTE = VALUE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -6481,6 +6940,15 @@ public interface VdmlPackage extends EPackage {
     int OUTPUT_DELEGATION__DESCRIPTION = PORT_DELEGATION__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int OUTPUT_DELEGATION__ANY_ATTRIBUTE = PORT_DELEGATION__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Source</b></em>' reference.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6570,6 +7038,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int VALUE_PROPOSITION__DESCRIPTION = MEASURABLE_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VALUE_PROPOSITION__ANY_ATTRIBUTE = MEASURABLE_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -6717,6 +7194,15 @@ public interface VdmlPackage extends EPackage {
     int ROLE_DEFINITION__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ROLE_DEFINITION__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Category</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6808,6 +7294,15 @@ public interface VdmlPackage extends EPackage {
     int ROLE_CATEGORY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ROLE_CATEGORY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Category Role</b></em>' reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -6888,6 +7383,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int PRACTICE_LIBRARY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PRACTICE_LIBRARY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Practice Definition</b></em>' containment reference list.
@@ -6981,6 +7485,15 @@ public interface VdmlPackage extends EPackage {
     int ROLE_LIBRARY__DESCRIPTION = VDML_ELEMENT__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int ROLE_LIBRARY__ANY_ATTRIBUTE = VDML_ELEMENT__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Role Definition</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -7070,6 +7583,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int BUSINESS_NETWORK__DESCRIPTION = COLLABORATION__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int BUSINESS_NETWORK__ANY_ATTRIBUTE = COLLABORATION__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -7262,6 +7784,15 @@ public interface VdmlPackage extends EPackage {
     int PARTY__DESCRIPTION = ROLE__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PARTY__ANY_ATTRIBUTE = ROLE__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -7432,6 +7963,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int COMMUNITY__DESCRIPTION = COLLABORATION__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int COMMUNITY__ANY_ATTRIBUTE = COLLABORATION__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
@@ -7624,6 +8164,15 @@ public interface VdmlPackage extends EPackage {
     int MEMBER__DESCRIPTION = ROLE__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int MEMBER__ANY_ATTRIBUTE = ROLE__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -7787,6 +8336,15 @@ public interface VdmlPackage extends EPackage {
     int PERSON__DESCRIPTION = ACTOR__DESCRIPTION;
 
     /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int PERSON__ANY_ATTRIBUTE = ACTOR__ANY_ATTRIBUTE;
+
+    /**
      * The feature id for the '<em><b>Measured Characteristic</b></em>' containment reference list.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -7894,6 +8452,15 @@ public interface VdmlPackage extends EPackage {
      * @ordered
      */
     int CAPABILITY_CATEGORY__DESCRIPTION = CAPABILITY__DESCRIPTION;
+
+    /**
+     * The feature id for the '<em><b>Any Attribute</b></em>' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int CAPABILITY_CATEGORY__ANY_ATTRIBUTE = CAPABILITY__ANY_ATTRIBUTE;
 
     /**
      * The feature id for the '<em><b>Parent Cabability</b></em>' reference list.
@@ -8120,6 +8687,17 @@ public interface VdmlPackage extends EPackage {
      * @generated
      */
     EAttribute getVdmlElement_Description();
+
+    /**
+     * Returns the meta object for the attribute list '{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getAnyAttribute <em>Any Attribute</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the attribute list '<em>Any Attribute</em>'.
+     * @see org.pavanecce.vdml.metamodel.vdml.VdmlElement#getAnyAttribute()
+     * @see #getVdmlElement()
+     * @generated
+     */
+    EAttribute getVdmlElement_AnyAttribute();
 
     /**
      * Returns the meta object for the containment reference list '{@link org.pavanecce.vdml.metamodel.vdml.VdmlElement#getAttribute <em>Attribute</em>}'.
@@ -11068,6 +11646,14 @@ public interface VdmlPackage extends EPackage {
          * @generated
          */
         EAttribute VDML_ELEMENT__DESCRIPTION = eINSTANCE.getVdmlElement_Description();
+
+        /**
+         * The meta object literal for the '<em><b>Any Attribute</b></em>' attribute list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EAttribute VDML_ELEMENT__ANY_ATTRIBUTE = eINSTANCE.getVdmlElement_AnyAttribute();
 
         /**
          * The meta object literal for the '<em><b>Attribute</b></em>' containment reference list feature.

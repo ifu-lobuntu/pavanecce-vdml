@@ -11,7 +11,9 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+import org.eclipse.emf.ecore.util.BasicFeatureMap;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.FeatureMap;
 import org.eclipse.emf.ecore.util.InternalEList;
 import org.pavanecce.vdml.metamodel.vdml.Annotation;
 import org.pavanecce.vdml.metamodel.vdml.Attribute;
@@ -30,6 +32,7 @@ import org.pavanecce.vdml.metamodel.vdml.VdmlPackage;
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.impl.VdmlElementImpl#getId <em>Id</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.impl.VdmlElementImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdml.impl.VdmlElementImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.pavanecce.vdml.metamodel.vdml.impl.VdmlElementImpl#getAnyAttribute <em>Any Attribute</em>}</li>
  * </ul>
  * </p>
  *
@@ -117,6 +120,16 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
     protected String description = DESCRIPTION_EDEFAULT;
 
     /**
+     * The cached value of the '{@link #getAnyAttribute() <em>Any Attribute</em>}' attribute list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getAnyAttribute()
+     * @generated
+     * @ordered
+     */
+    protected FeatureMap anyAttribute;
+
+    /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -182,6 +195,18 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
      * <!-- end-user-doc -->
      * @generated
      */
+    public FeatureMap getAnyAttribute() {
+        if (anyAttribute == null) {
+            anyAttribute = new BasicFeatureMap(this, VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE);
+        }
+        return anyAttribute;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EList<Attribute> getAttribute() {
         if (attribute == null) {
             attribute = new EObjectContainmentEList<Attribute>(Attribute.class, this, VdmlPackage.VDML_ELEMENT__ATTRIBUTE);
@@ -234,6 +259,8 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
                 return ((InternalEList<?>)getAttribute()).basicRemove(otherEnd, msgs);
             case VdmlPackage.VDML_ELEMENT__ANNOTATION:
                 return ((InternalEList<?>)getAnnotation()).basicRemove(otherEnd, msgs);
+            case VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE:
+                return ((InternalEList<?>)getAnyAttribute()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -256,6 +283,9 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
                 return getName();
             case VdmlPackage.VDML_ELEMENT__DESCRIPTION:
                 return getDescription();
+            case VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE:
+                if (coreType) return getAnyAttribute();
+                return ((FeatureMap.Internal)getAnyAttribute()).getWrapper();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -286,6 +316,9 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
             case VdmlPackage.VDML_ELEMENT__DESCRIPTION:
                 setDescription((String)newValue);
                 return;
+            case VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE:
+                ((FeatureMap.Internal)getAnyAttribute()).set(newValue);
+                return;
         }
         super.eSet(featureID, newValue);
     }
@@ -313,6 +346,9 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
             case VdmlPackage.VDML_ELEMENT__DESCRIPTION:
                 setDescription(DESCRIPTION_EDEFAULT);
                 return;
+            case VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE:
+                getAnyAttribute().clear();
+                return;
         }
         super.eUnset(featureID);
     }
@@ -335,6 +371,8 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
                 return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
             case VdmlPackage.VDML_ELEMENT__DESCRIPTION:
                 return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+            case VdmlPackage.VDML_ELEMENT__ANY_ATTRIBUTE:
+                return anyAttribute != null && !anyAttribute.isEmpty();
         }
         return super.eIsSet(featureID);
     }
@@ -355,6 +393,8 @@ public abstract class VdmlElementImpl extends MinimalEObjectImpl.Container imple
         result.append(name);
         result.append(", description: ");
         result.append(description);
+        result.append(", anyAttribute: ");
+        result.append(anyAttribute);
         result.append(')');
         return result.toString();
     }
