@@ -35,6 +35,8 @@ public class VdmlResourceImpl extends XMLResourceImpl {
         referrables.add(VdmlPackage.eINSTANCE.getResourceUse());
         referrables.add(VdmlPackage.eINSTANCE.getStore());
         referrables.add(VdmlPackage.eINSTANCE.getPool());
+        referrables.add(VdmlPackage.eINSTANCE.getInputDelegation());
+        referrables.add(VdmlPackage.eINSTANCE.getOutputDelegation());
     }
     /**
      * Creates an instance of the resource.
