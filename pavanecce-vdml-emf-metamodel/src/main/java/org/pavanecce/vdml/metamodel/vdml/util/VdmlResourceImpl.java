@@ -5,6 +5,7 @@ package org.pavanecce.vdml.metamodel.vdml.util;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+
 import org.eclipse.cmmn1.TDefinitions;
 import org.eclipse.cmmn1.util.ImportHelper;
 import org.eclipse.emf.common.util.URI;
@@ -15,6 +16,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLSave;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 import org.pavanecce.vdml.metamodel.vdml.VdmlPackage;
+import org.pavanecce.vdml.metamodel.vdmldi.VdmlDiPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,6 +39,10 @@ public class VdmlResourceImpl extends XMLResourceImpl {
         referrables.add(VdmlPackage.eINSTANCE.getPool());
         referrables.add(VdmlPackage.eINSTANCE.getInputDelegation());
         referrables.add(VdmlPackage.eINSTANCE.getOutputDelegation());
+        referrables.add(VdmlPackage.eINSTANCE.getValueProposition());
+        referrables.add(VdmlDiPackage.eINSTANCE.getVDMLPlane());
+        referrables.add(VdmlDiPackage.eINSTANCE.getVDMLShape());
+        referrables.add(VdmlDiPackage.eINSTANCE.getVDMLEdge());
     }
     /**
      * Creates an instance of the resource.

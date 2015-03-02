@@ -730,13 +730,22 @@ public interface VdmlDiPackage extends EPackage {
     int VDML_SHAPE__IS_MARKER_VISIBLE = DiPackage.LABELED_SHAPE_FEATURE_COUNT + 4;
 
     /**
+     * The feature id for the '<em><b>Owned Shape</b></em>' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     * @ordered
+     */
+    int VDML_SHAPE__OWNED_SHAPE = DiPackage.LABELED_SHAPE_FEATURE_COUNT + 5;
+
+    /**
      * The number of structural features of the '<em>VDML Shape</em>' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      * @ordered
      */
-    int VDML_SHAPE_FEATURE_COUNT = DiPackage.LABELED_SHAPE_FEATURE_COUNT + 5;
+    int VDML_SHAPE_FEATURE_COUNT = DiPackage.LABELED_SHAPE_FEATURE_COUNT + 6;
 
     /**
      * The number of operations of the '<em>VDML Shape</em>' class.
@@ -1072,6 +1081,17 @@ public interface VdmlDiPackage extends EPackage {
     EAttribute getVDMLShape_IsMarkerVisible();
 
     /**
+     * Returns the meta object for the containment reference list '{@link org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#getOwnedShape <em>Owned Shape</em>}'.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @return the meta object for the containment reference list '<em>Owned Shape</em>'.
+     * @see org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#getOwnedShape()
+     * @see #getVDMLShape()
+     * @generated
+     */
+    EReference getVDMLShape_OwnedShape();
+
+    /**
      * Returns the meta object for class '{@link org.pavanecce.vdml.metamodel.vdmldi.DocumentRoot <em>Document Root</em>}'.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -1374,6 +1394,14 @@ public interface VdmlDiPackage extends EPackage {
          * @generated
          */
         EAttribute VDML_SHAPE__IS_MARKER_VISIBLE = eINSTANCE.getVDMLShape_IsMarkerVisible();
+
+        /**
+         * The meta object literal for the '<em><b>Owned Shape</b></em>' containment reference list feature.
+         * <!-- begin-user-doc -->
+         * <!-- end-user-doc -->
+         * @generated
+         */
+        EReference VDML_SHAPE__OWNED_SHAPE = eINSTANCE.getVDMLShape_OwnedShape();
 
         /**
          * The meta object literal for the '{@link org.pavanecce.vdml.metamodel.vdmldi.impl.DocumentRootImpl <em>Document Root</em>}' class.

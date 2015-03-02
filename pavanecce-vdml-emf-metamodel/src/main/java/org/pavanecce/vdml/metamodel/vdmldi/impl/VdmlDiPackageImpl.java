@@ -114,7 +114,7 @@ public class VdmlDiPackageImpl extends EPackageImpl implements VdmlDiPackage {
 
     /**
      * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-     *
+     * 
      * <p>This method is used to initialize {@link VdmlDiPackage#eINSTANCE} when that field is accessed.
      * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
      * <!-- begin-user-doc -->
@@ -161,7 +161,7 @@ public class VdmlDiPackageImpl extends EPackageImpl implements VdmlDiPackage {
         // Mark meta-data to indicate it can't be changed
         theVdmlDiPackage.freeze();
 
-
+  
         // Update the registry and return the package
         EPackage.Registry.INSTANCE.put(VdmlDiPackage.eNS_URI, theVdmlDiPackage);
         return theVdmlDiPackage;
@@ -352,6 +352,15 @@ public class VdmlDiPackageImpl extends EPackageImpl implements VdmlDiPackage {
      * <!-- end-user-doc -->
      * @generated
      */
+    public EReference getVDMLShape_OwnedShape() {
+        return (EReference)vdmlShapeEClass.getEStructuralFeatures().get(5);
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     public EClass getDocumentRoot() {
         return documentRootEClass;
     }
@@ -490,6 +499,7 @@ public class VdmlDiPackageImpl extends EPackageImpl implements VdmlDiPackage {
         createEAttribute(vdmlShapeEClass, VDML_SHAPE__IS_EXPANDED);
         createEAttribute(vdmlShapeEClass, VDML_SHAPE__IS_HORIZONTAL);
         createEAttribute(vdmlShapeEClass, VDML_SHAPE__IS_MARKER_VISIBLE);
+        createEReference(vdmlShapeEClass, VDML_SHAPE__OWNED_SHAPE);
 
         documentRootEClass = createEClass(DOCUMENT_ROOT);
         createEAttribute(documentRootEClass, DOCUMENT_ROOT__MIXED);
@@ -573,6 +583,7 @@ System.out.println(eAllStructuralFeatures);
         initEAttribute(getVDMLShape_IsExpanded(), theXMLTypePackage.getBoolean(), "isExpanded", null, 0, 1, VDMLShape.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getVDMLShape_IsHorizontal(), theXMLTypePackage.getBoolean(), "isHorizontal", null, 0, 1, VDMLShape.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
         initEAttribute(getVDMLShape_IsMarkerVisible(), theXMLTypePackage.getBoolean(), "isMarkerVisible", null, 0, 1, VDMLShape.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+        initEReference(getVDMLShape_OwnedShape(), theDiPackage.getDiagramElement(), null, "ownedShape", null, 0, -1, VDMLShape.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
         initEClass(documentRootEClass, DocumentRoot.class, "DocumentRoot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
         initEAttribute(getDocumentRoot_Mixed(), ecorePackage.getEFeatureMapEntry(), "mixed", null, 0, -1, null, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -600,224 +611,224 @@ System.out.println(eAllStructuralFeatures);
      * @generated
      */
     protected void createExtendedMetaDataAnnotations() {
-        String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";
+        String source = "http:///org/eclipse/emf/ecore/util/ExtendedMetaData";	
         addAnnotation
-          (vdmlDiagramEClass,
-           source,
+          (vdmlDiagramEClass, 
+           source, 
            new String[] {
              "name", "VDMLDiagram",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLDiagram_VDMLPlane(),
-           source,
+          (getVDMLDiagram_VDMLPlane(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLPlane",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getVDMLDiagram_LabelStyle(),
-           source,
+          (getVDMLDiagram_LabelStyle(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLLabelStyle",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (vdmlEdgeEClass,
-           source,
+          (vdmlEdgeEClass, 
+           source, 
            new String[] {
              "name", "VDMLEdge",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLEdge_Label(),
-           source,
+          (getVDMLEdge_Label(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLLabel",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getVDMLEdge_VDMLElement(),
-           source,
+          (getVDMLEdge_VDMLElement(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "VDMLElement"
-           });
+           });	
         addAnnotation
-          (getVDMLEdge_SourceElement(),
-           source,
+          (getVDMLEdge_SourceElement(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "sourceElement"
-           });
+           });	
         addAnnotation
-          (getVDMLEdge_TargetElement(),
-           source,
+          (getVDMLEdge_TargetElement(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "targetElement"
-           });
+           });	
         addAnnotation
-          (vdmlLabelEClass,
-           source,
+          (vdmlLabelEClass, 
+           source, 
            new String[] {
              "name", "VDMLLabel",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLLabel_LabelStyle(),
-           source,
+          (getVDMLLabel_LabelStyle(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "labelStyle"
-           });
+           });	
         addAnnotation
-          (vdmlLabelStyleEClass,
-           source,
+          (vdmlLabelStyleEClass, 
+           source, 
            new String[] {
              "name", "VDMLLabelStyle",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLLabelStyle_Font(),
-           source,
+          (getVDMLLabelStyle_Font(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "Font",
              "namespace", "http://www.omg.org/spec/DD/20100524/DC"
-           });
+           });	
         addAnnotation
-          (vdmlPlaneEClass,
-           source,
+          (vdmlPlaneEClass, 
+           source, 
            new String[] {
              "name", "VDMLPlane",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLPlane_VDMLElement(),
-           source,
+          (getVDMLPlane_VDMLElement(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "VDMLElement"
-           });
+           });	
         addAnnotation
-          (vdmlShapeEClass,
-           source,
+          (vdmlShapeEClass, 
+           source, 
            new String[] {
              "name", "VDMLShape",
              "kind", "elementOnly"
-           });
+           });	
         addAnnotation
-          (getVDMLShape_Label(),
-           source,
+          (getVDMLShape_Label(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLLabel",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getVDMLShape_VDMLElement(),
-           source,
+          (getVDMLShape_VDMLElement(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "VDMLElement"
-           });
+           });	
         addAnnotation
-          (getVDMLShape_IsExpanded(),
-           source,
+          (getVDMLShape_IsExpanded(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "isExpanded"
-           });
+           });	
         addAnnotation
-          (getVDMLShape_IsHorizontal(),
-           source,
+          (getVDMLShape_IsHorizontal(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "isHorizontal"
-           });
+           });	
         addAnnotation
-          (getVDMLShape_IsMarkerVisible(),
-           source,
+          (getVDMLShape_IsMarkerVisible(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "isMarkerVisible"
-           });
+           });	
         addAnnotation
-          (documentRootEClass,
-           source,
+          (documentRootEClass, 
+           source, 
            new String[] {
              "name", "",
              "kind", "mixed"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Mixed(),
-           source,
+          (getDocumentRoot_Mixed(), 
+           source, 
            new String[] {
              "kind", "elementWildcard",
              "name", ":mixed"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_XMLNSPrefixMap(),
-           source,
+          (getDocumentRoot_XMLNSPrefixMap(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "xmlns:prefix"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_XSISchemaLocation(),
-           source,
+          (getDocumentRoot_XSISchemaLocation(), 
+           source, 
            new String[] {
              "kind", "attribute",
              "name", "xsi:schemaLocation"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Diagram(),
-           source,
+          (getDocumentRoot_Diagram(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLDiagram",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Edge(),
-           source,
+          (getDocumentRoot_Edge(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLEdge",
              "namespace", "##targetNamespace",
              "affiliation", "http://www.omg.org/spec/DD/20100524/DI#DiagramElement"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Label(),
-           source,
+          (getDocumentRoot_Label(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLLabel",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_LabelStyle(),
-           source,
+          (getDocumentRoot_LabelStyle(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLLabelStyle",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Plane(),
-           source,
+          (getDocumentRoot_Plane(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLPlane",
              "namespace", "##targetNamespace"
-           });
+           });	
         addAnnotation
-          (getDocumentRoot_Shape(),
-           source,
+          (getDocumentRoot_Shape(), 
+           source, 
            new String[] {
              "kind", "element",
              "name", "VDMLShape",

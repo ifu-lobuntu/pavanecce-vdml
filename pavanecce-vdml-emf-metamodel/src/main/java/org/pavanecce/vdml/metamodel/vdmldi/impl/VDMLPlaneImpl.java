@@ -2,10 +2,8 @@
  */
 package org.pavanecce.vdml.metamodel.vdmldi.impl;
 
-import org.eclipse.dd.cmmn.di.DiagramElement;
 import org.eclipse.dd.cmmn.di.impl.PlaneImpl;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -157,4 +155,5 @@ public class VDMLPlaneImpl extends PlaneImpl implements VDMLPlane {
     public EObject getModelElement() {
         return getVDMLElement();
     }
+
 } //VDMLPlaneImpl

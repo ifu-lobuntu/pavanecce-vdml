@@ -2,13 +2,18 @@
  */
 package org.pavanecce.vdml.metamodel.vdmldi.impl;
 
+import java.util.Collection;
+import org.eclipse.dd.cmmn.di.DiagramElement;
 import org.eclipse.dd.cmmn.di.impl.LabeledShapeImpl;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 import org.pavanecce.vdml.metamodel.vdml.VdmlElement;
 import org.pavanecce.vdml.metamodel.vdmldi.VDMLLabel;
 import org.pavanecce.vdml.metamodel.vdmldi.VDMLShape;
@@ -26,6 +31,7 @@ import org.pavanecce.vdml.metamodel.vdmldi.VdmlDiPackage;
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.impl.VDMLShapeImpl#isExpanded <em>Is Expanded</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.impl.VDMLShapeImpl#isHorizontal <em>Is Horizontal</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.impl.VDMLShapeImpl#isMarkerVisible <em>Is Marker Visible</em>}</li>
+ *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.impl.VDMLShapeImpl#getOwnedShape <em>Owned Shape</em>}</li>
  * </ul>
  * </p>
  *
@@ -138,6 +144,16 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
      * @ordered
      */
     protected boolean isMarkerVisibleESet;
+
+    /**
+     * The cached value of the '{@link #getOwnedShape() <em>Owned Shape</em>}' containment reference list.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see #getOwnedShape()
+     * @generated
+     * @ordered
+     */
+    protected EList<DiagramElement> ownedShape;
 
     /**
      * <!-- begin-user-doc -->
@@ -382,11 +398,25 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
      * <!-- end-user-doc -->
      * @generated
      */
+    public EList<DiagramElement> getOwnedShape() {
+        if (ownedShape == null) {
+            ownedShape = new EObjectContainmentEList<DiagramElement>(DiagramElement.class, this, VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE);
+        }
+        return ownedShape;
+    }
+
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
     @Override
     public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
         switch (featureID) {
             case VdmlDiPackage.VDML_SHAPE__LABEL:
                 return basicSetLabel(null, msgs);
+            case VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE:
+                return ((InternalEList<?>)getOwnedShape()).basicRemove(otherEnd, msgs);
         }
         return super.eInverseRemove(otherEnd, featureID, msgs);
     }
@@ -410,6 +440,8 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
                 return isHorizontal();
             case VdmlDiPackage.VDML_SHAPE__IS_MARKER_VISIBLE:
                 return isMarkerVisible();
+            case VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE:
+                return getOwnedShape();
         }
         return super.eGet(featureID, resolve, coreType);
     }
@@ -419,6 +451,7 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
      * <!-- end-user-doc -->
      * @generated
      */
+    @SuppressWarnings("unchecked")
     @Override
     public void eSet(int featureID, Object newValue) {
         switch (featureID) {
@@ -436,6 +469,10 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
                 return;
             case VdmlDiPackage.VDML_SHAPE__IS_MARKER_VISIBLE:
                 setIsMarkerVisible((Boolean)newValue);
+                return;
+            case VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE:
+                getOwnedShape().clear();
+                getOwnedShape().addAll((Collection<? extends DiagramElement>)newValue);
                 return;
         }
         super.eSet(featureID, newValue);
@@ -464,6 +501,9 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
             case VdmlDiPackage.VDML_SHAPE__IS_MARKER_VISIBLE:
                 unsetIsMarkerVisible();
                 return;
+            case VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE:
+                getOwnedShape().clear();
+                return;
         }
         super.eUnset(featureID);
     }
@@ -486,6 +526,8 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
                 return isSetIsHorizontal();
             case VdmlDiPackage.VDML_SHAPE__IS_MARKER_VISIBLE:
                 return isSetIsMarkerVisible();
+            case VdmlDiPackage.VDML_SHAPE__OWNED_SHAPE:
+                return ownedShape != null && !ownedShape.isEmpty();
         }
         return super.eIsSet(featureID);
     }
@@ -513,6 +555,10 @@ public class VDMLShapeImpl extends LabeledShapeImpl implements VDMLShape {
     @Override
     public EObject getModelElement() {
         return getVDMLElement();
+    }
+    @Override
+    public EList<DiagramElement> getOwnedElement() {
+        return getOwnedShape();
     }
 
 } //VDMLShapeImpl

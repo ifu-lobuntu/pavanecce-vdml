@@ -2,7 +2,9 @@
  */
 package org.pavanecce.vdml.metamodel.vdmldi;
 
+import org.eclipse.dd.cmmn.di.DiagramElement;
 import org.eclipse.dd.cmmn.di.LabeledShape;
+import org.eclipse.emf.common.util.EList;
 import org.pavanecce.vdml.metamodel.vdml.VdmlElement;
 
 /**
@@ -18,6 +20,7 @@ import org.pavanecce.vdml.metamodel.vdml.VdmlElement;
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#isExpanded <em>Is Expanded</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#isHorizontal <em>Is Horizontal</em>}</li>
  *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#isMarkerVisible <em>Is Marker Visible</em>}</li>
+ *   <li>{@link org.pavanecce.vdml.metamodel.vdmldi.VDMLShape#getOwnedShape <em>Owned Shape</em>}</li>
  * </ul>
  * </p>
  *
@@ -240,5 +243,21 @@ public interface VDMLShape extends LabeledShape {
      * @generated
      */
     boolean isSetIsMarkerVisible();
+
+    /**
+     * Returns the value of the '<em><b>Owned Shape</b></em>' containment reference list.
+     * The list contents are of type {@link org.eclipse.dd.cmmn.di.DiagramElement}.
+     * <!-- begin-user-doc -->
+     * <p>
+     * If the meaning of the '<em>Owned Shape</em>' reference list isn't clear,
+     * there really should be more of a description here...
+     * </p>
+     * <!-- end-user-doc -->
+     * @return the value of the '<em>Owned Shape</em>' containment reference list.
+     * @see org.pavanecce.vdml.metamodel.vdmldi.VdmlDiPackage#getVDMLShape_OwnedShape()
+     * @model containment="true"
+     * @generated
+     */
+    EList<DiagramElement> getOwnedShape();
 
 } // VDMLShape
